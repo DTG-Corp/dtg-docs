@@ -4,38 +4,38 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: '🤖 AI OCR',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Giải pháp nhận dạng ký tự quang học bằng AI — trích xuất văn bản từ hình ảnh, tài liệu scan, và PDF với độ chính xác cao.
       </>
     ),
+    link: '/docs/category/ai-ocr',
   },
   {
-    title: 'Focus on What Matters',
+    title: '🏌️ ALOGOFL',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Nền tảng ứng dụng AI thế hệ mới — kết hợp LLM, RAG và Agentic AI để giải quyết các bài toán doanh nghiệp phức tạp.
       </>
     ),
+    link: '/docs/category/alogofl',
   },
   {
-    title: 'Powered by React',
+    title: '🧠 ENMA AI AGENT',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Hệ thống AI Agent thông minh — tự động hoá quy trình, phân tích dữ liệu, và hỗ trợ ra quyết định cho doanh nghiệp.
       </>
     ),
+    link: '/docs/category/enma-ai-agent',
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, title, description, link}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -44,6 +44,9 @@ function Feature({Svg, title, description}) {
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
+        <div className={styles.buttons}>
+          <a className="button button--secondary button--sm" href={link}>Xem chi tiết →</a>
+        </div>
       </div>
     </div>
   );

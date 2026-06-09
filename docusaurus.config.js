@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'DTG Docs',
+  tagline: 'Tài liệu kỹ thuật DTG Corp',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://dtg-corp.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/dtg-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'DTG-Corp', // Usually your GitHub org/user name.
+  projectName: 'dtg-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,10 +47,8 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/DTG-Corp/dtg-docs/tree/main/',
         },
         blog: {
           showReadingTime: true,
@@ -58,10 +56,8 @@ const config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/DTG-Corp/dtg-docs/tree/main/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -93,12 +89,22 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Tài liệu',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            href: 'https://dtgcorp.com.vn',
+            label: 'DTG Corp',
+            position: 'right',
+          },
+          {
+            href: 'https://dtgsoft.vn',
+            label: 'R&D Center',
+            position: 'right',
+          },
+          {
+            href: 'https://cybergateway.vn',
+            label: 'SOC Center',
             position: 'right',
           },
         ],
@@ -107,46 +113,50 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Tài liệu',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Giới thiệu',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'AI Encyclopedia',
+                to: '/docs/category/ai-encyclopedia',
               },
             ],
           },
           {
-            title: 'More',
+            title: 'Hệ sinh thái DTG',
             items: [
+              {
+                label: '🌐 DTG Corp',
+                href: 'https://dtgcorp.com.vn',
+              },
+              {
+                label: '🔬 R&D Center',
+                href: 'https://dtgsoft.vn',
+              },
+              {
+                label: '🛡️ SOC Center',
+                href: 'https://cybergateway.vn',
+              },
+            ],
+          },
+          {
+            title: 'GitHub',
+            items: [
+              {
+                label: 'DTG Docs',
+                href: 'https://github.com/DTG-Corp/dtg-docs',
+              },
               {
                 label: 'Blog',
                 to: '/blog',
               },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} DTG Corp. All rights reserved.`,
       },
       prism: {
         theme: prismThemes.github,
