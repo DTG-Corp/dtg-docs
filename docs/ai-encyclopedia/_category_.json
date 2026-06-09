@@ -1,0 +1,9 @@
+{
+  "label": "AI Encyclopedia",
+  "position": 5,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "🧠 Bách khoa toàn thư AI — LLM, RAG, Agentic AI, và các khái niệm cốt lõi"
+  }
+}
